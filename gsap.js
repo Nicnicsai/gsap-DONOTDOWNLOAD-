@@ -10,7 +10,7 @@ let controller = new ScrollMagic.Controller();
 
 // CREATE SCENE : A Scene defines where the controller should react and how.
 let scene = new ScrollMagic.Scene({
-    triggerElement: '.wrapper',
+    triggerElement: '.textsection',
     duration: "100%",
     triggerHook: 0.5  //Can be a number between 0 and 1 defining the position of the trigger Hook in relation to the viewport.
 })
