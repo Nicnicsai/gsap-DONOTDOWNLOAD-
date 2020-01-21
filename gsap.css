@@ -93,8 +93,9 @@ body {
 
 .headline p{
     color: #ECE7EC;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+    font-family: 'enhanced_dot_digital-7regular','Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-weight: 600;*/
     letter-spacing: 1.5px;
     font-size: 20px;
     display: flex;
@@ -180,6 +181,7 @@ h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     letter-spacing: 1.5px;
+    margin-bottom: 30px;
 
 }
 
@@ -251,3 +253,31 @@ h3{
     overflow: hidden;
     width: 300px;
 }
+
+
+.animation {
+    height: 700px;
+}
+
+.nav button {
+    border: 2px solid black;
+    margin-left: 5px;
+    background-color: #37C3FF; /* Green */
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.nav button:hover {
+
+    background-color: #098DC6; /* Green */
+
+}
+
+

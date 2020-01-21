@@ -1,6 +1,7 @@
 //https://scrollmagic.io/docs/ScrollMagic.Scene.html#constructor
 //https://ihatetomatoes.net/5-days-with-scrollmagic/
 
+
 // INIT CONTROLLER
 let controller = new ScrollMagic.Controller();
 
@@ -69,14 +70,29 @@ gsap.registerPlugin(MotionPathPlugin);
 //centers the smiley div on path
 gsap.set("#smiley", {xPercent: -50, yPercent: -50, transformOrigin: "50% 50%"});
 
-gsap.to("#smiley", {
+/*gsap.to("#smiley", {
     duration: 9,
     motionPath:
         {path: "#path",
          autoRotate: true
         }
+});*/
+
+/*5: CONTROLLING ANIMATION */
+
+let animation = gsap.to("#smiley", {
+    duration: 9,
+    motionPath:
+        {path: "#path",
+            autoRotate: true
+        }
 });
 
-/*5: BACKGROUNDCOLOR CHANGE */
+// click handlers for controlling the tween instance...
+document.querySelector("#play").onclick = () => animation.play();
+document.querySelector("#pause").onclick = () => animation.pause();
+document.querySelector("#resume").onclick = () => animation.resume();
+document.querySelector("#reverse").onclick = () => animation.reverse();
+document.querySelector("#restart").onclick = () => animation.restart();
 
 
