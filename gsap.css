@@ -183,7 +183,7 @@ h1{
 
 .section {
     margin: 40px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .section-books{
@@ -288,9 +288,14 @@ h3{
 }
 
 .nav button:hover {
-
     background-color: #098DC6; /* Green */
+}
 
+#eyes {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 150px;
 }
 
 
